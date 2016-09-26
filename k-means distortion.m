@@ -9,7 +9,9 @@ for i = 1:m
 end
 Distortion = sum( sum((X - Centroids).^2) ) / m;
 
-% More intuitive, but slower version
+
+% More intuitive, but slower version:
+
 % SumD = 0;
 % for i = 1:m
 %    SumD = SumD + sum( ( X(i,:) - centroids(idx(i), :) ) .^ 2 );
