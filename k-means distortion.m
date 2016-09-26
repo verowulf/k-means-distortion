@@ -5,7 +5,7 @@
 
 SumD = 0;
 for i = 1:m
-    SumD = SumD + sum( ( X(i,:) - centroids( idx(i), :) ) .^ 2);
+    SumD = SumD + sum( ( X(i,:) - centroids( idx(i), :) ) .^ 2 );
 end
 
 Distortion = SumD / m;
